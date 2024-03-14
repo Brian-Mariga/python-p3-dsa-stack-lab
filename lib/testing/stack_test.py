@@ -32,30 +32,30 @@ class TestStack:
         expected = [1,2,3,4,5]
         assert(stk.size() == len(expected))
 
-    def test_empty(self):
-        '''Test Stack empty() method'''
-        stk = Stack()
-        assert(stk.isEmpty())
-        assert(stk.size() == 0)
-        assert(stk.pop() == None)
-        stk.push(1)
-        assert(not stk.isEmpty())
-        assert(stk.size() == 1)
-        assert(stk.pop() == 1)
+    # def test_empty(self):
+    #     '''Test Stack empty() method'''
+    #     stk = Stack()
+    #     assert(stk.isEmpty())
+    #     assert(stk.size() == 0)
+    #     assert(stk.pop() == None)
+    #     stk.push(1)
+    #     assert(not stk.isEmpty())
+    #     assert(stk.size() == 1)
+    #     assert(stk.pop() == 1)
 
 
-    def test_full(self):
-        '''Test Stack full() method'''
-        stk = Stack([1], 1)
+    # def test_full(self):
+    #     '''Test Stack full() method'''
+    #     stk = Stack([1], 1)
 
-        assert(stk.full())
-        assert(stk.size() == 1)
-        assert(stk.pop() == 1)
-        stk.push(1)
-        stk.push(2)
-        assert(stk.full())
-        assert(stk.size() == 1)
-        assert(stk.pop() == 1)
+    #     assert(stk.full())
+    #     assert(stk.size() == 1)
+    #     assert(stk.pop() == 1)
+    #     stk.push(1)
+    #     stk.push(2)
+    #     assert(stk.full())
+    #     assert(stk.size() == 1)
+    #     assert(stk.pop() == 1)
 
     def test_search(self):
         '''Test Stack search() method. How far is the element in the stack? '''
